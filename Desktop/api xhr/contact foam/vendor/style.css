@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+:root{
+  --Red: hsl(0, 100%, 74%) ;
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ body{
+  background: var(--Red) url(../vendor/images/bg-intro-desktop.png);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* min-height: 100vh; */
+  padding: 5em 0 1em;
+
+ }
+ /* main  */
+ .main-container{
+  display: flex;
+  padding: 0 2rem;
+
+ }
+ /* can be found in main container */
+ .text-container{
+  margin-right: 100px;
+  margin-top: 200px;
+ }
+ /* can be found in box-container */
+ .form-container {
+  width: 500px;
+ max-width: 500px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 4px 10px 5px 7px rgba(0,0,0,0.61);
+ min-height: 70vh;
+ padding: 50px 75px 50px 50px;
+ 
+ }
+ .small-container{
+  max-width: 500px;
+  border-radius: 10px;
+  background-color: var(--Blue);
+  box-shadow: 4px 10px 5px 7px rgba(0,0,0,0.61);
+ padding: 20px;
+ margin-bottom: 40px;
+ text-align: center;
+ color: #fff;
+ font-weight: 700;
+ font-family: 'PT Sans', sans-serif;
+ /* place-items: center; */
+ 
+ }
+
+.main-text{
+  color: #fff;
+  font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 55px;
+  line-height: 50px;
+  letter-spacing: 3px;
+}
+.small-text{
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 30px;
+}
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control input {
+  border: 1px solid var(--Grayish-Blue);
+  border-radius: 5px;
+ 
+ width: 110%;
+  padding: 10px 55px 10px 55px;
+  font-size: 16px;
+}
+.border-control {
+ border: 1px solid red;
+}
+.sign-up-button {
+  border: none;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  background-color: var(--Green);
+  color: #fff;
+  padding: 1.25em 0;
+  width: 110%;
+  font-size: 1rem;
+  box-shadow: 0px 4px 0px 1px hsl(154deg 59% 51% / 56%);
+  border-radius: 0.75rem;
+  margin: 0 auto 2rem;
+  text-transform: uppercase;
+}
+/* footer */
+
+.footer{
+  text-align: center;
+  font-size: 12px;
+  color: var(--Grayish-Blue);
+}
+ 
